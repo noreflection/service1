@@ -22,7 +22,7 @@ const (
 
 func main() {
 	http.HandleFunc("/receive", receiveMessageHandler)
-	log.Fatal(http.ListenAndServe(":8080", nil))
+	log.Fatal(http.ListenAndServe(":8081", nil))
 }
 
 func receiveMessageHandler(w http.ResponseWriter, r *http.Request) {
